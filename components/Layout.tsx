@@ -76,7 +76,24 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
       {open && (
         <div className="fixed p-5 top-0 left-0 right-0 bottom-0 backdrop-blur-xl z-50 h-screen w-screen">
           <div className="flex flex-col gap-5 items-center jsutify-center py-4 overflow-y-auto">
-            <button onClick={() => setOpen(false)} className="self-end">close</button>
+            <button onClick={() => setOpen(false)} className="self-end">
+              <svg
+                className="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                ></path>
+              </svg>
+            </button>
+
             <Link
               href="/products"
               className="p-3 hover:bg-blue-200 w-full text-center text-[#1d4ed8]"
