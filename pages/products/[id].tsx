@@ -37,6 +37,9 @@ const ProductDetail = ({ id }: Props) => {
     onSuccess: () => {
       toast.success("Update successfully");
     },
+    onError: (error) => {
+      toast.error(`Something went wrong with error: ${error}`);
+    },
   });
 
   const updateProduct = (payload) => {
