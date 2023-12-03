@@ -76,7 +76,7 @@ const ListDetail = ({ item: product, updateProduct }: ListDetailProps) => {
         </div>
       </div>
       {isEdit && (
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4">
+        <div className="mt-2 w-full h-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4">
           <form onSubmit={handleSubmit}>
             <div className="grid gap-6 mb-6 md:grid-cols-2">
               <div>
@@ -148,7 +148,7 @@ const ListDetail = ({ item: product, updateProduct }: ListDetailProps) => {
 
             <button
               type="button"
-              className="ml-2 text-blue bg-white-700"
+              className="text-black bg-white-700  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               onClick={() => setIsEdit(false)}
             >
               Cancel
